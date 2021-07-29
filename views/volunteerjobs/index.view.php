@@ -6,14 +6,20 @@
     <ul>            
         <?php foreach($vars['volunteerjobs'] as $volunteerjob): ?>
             <li>
-                <?= $volunteerjob->start_year ?> -
-                <?php if (!$volunteerjob->end_year): ?>
-                    heden:
-                <?php else: ?>
-                    <?= $volunteerjob->end_year ?>:
-                <?php endif; ?>
-                <b> <?= $volunteerjob->function ?></b>
-                <?= $volunteerjob->info ?>
+                <div class="row">
+                    <div class="col-2">
+                        <?= $volunteerjob->start_year ?> -
+                        <?php if (!$volunteerjob->end_year): ?>
+                            heden:
+                        <?php else: ?>
+                            <?= $volunteerjob->end_year ?>:
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-10">
+                        <b> <?= $volunteerjob->function ?></b>
+                        <?= $volunteerjob->info ?>
+                    </div>
+                </div>
             </li>            
         <?php endforeach; ?>
     </ul> 
