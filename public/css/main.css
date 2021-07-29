@@ -5,9 +5,18 @@ body {
 }
 
 .main {
-    height: 500px;
+    min-height: 600px;
+}
+
+h2 {
+    text-align: center;
 }
 
 footer {
-    background-color: turquoise;
+    background-color: rgb(41, 41, 41);
+    color: rgb(147, 147, 147);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

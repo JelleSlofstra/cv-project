@@ -1,4 +1,4 @@
     </div>
 </div>
 
-<footer>Footer</footer>
+<footer>Gemaakt door Jelle Slofstra</footer>

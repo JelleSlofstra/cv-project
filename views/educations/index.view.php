@@ -2,6 +2,7 @@
 
 <div class="main">
     <h2>Opleidingen</h2>
+    <hr>
     <ul>            
         <?php foreach($vars['educations'] as $education): ?>
             <li>

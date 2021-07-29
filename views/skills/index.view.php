@@ -2,6 +2,7 @@
 
 <div class="main">
     <h2>Skills</h2>
+    <hr>
     <ul>            
         <?php foreach($vars['skills'] as $skill): ?>
             <li>
