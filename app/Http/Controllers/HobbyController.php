@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Libraries\View;
+use App\Models\HobbyModel;
 use App\Models\UserModel;
 
-class UserController extends Controller
+class HobbyController extends Controller
 {
 
     public function index()
     {   
-        View::render('users/index.view', [
-            'user'  => UserModel::get(1)
+        View::render('hobbies/index.view',[
+            'user'      => UserModel::get(1),
+            'hobbies'      => HobbyModel::userHobbies(1)
         ]);
     }
 
@@ -25,10 +27,10 @@ class UserController extends Controller
 
     public function create()
     {
-        dd('create user');
+        
     }
 
-    public function show($user_id)
+    public function show()
     {
 
     }
@@ -38,16 +40,7 @@ class UserController extends Controller
      */
     public function update()
     {
-        $data = [
-            'first_name' => "Code",
-            'last_name' => "Gorilla",
-            'email' => "toby@codegorilla.nl",
-            'password' => "q3234234q3213^^!^w23123",
-            'birthday' => "1990-12-31",
-            'created' => date("Y-m-d H:i:s"),
-        ];
-
-        UserModel::update($data, 1);
+       
     }
 
     /**
@@ -59,4 +52,3 @@ class UserController extends Controller
     }
 
 }
-

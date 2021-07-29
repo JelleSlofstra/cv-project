@@ -1,16 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: pink;
+    background-color: wheat;
 }
 
 .main {
-    height: 500px;
+    min-height: 600px;
+}
+
+h2 {
+    text-align: center;
 }
 
 footer {
-    background-color: turquoise;
+    background-color: rgb(41, 41, 41);
+    color: rgb(147, 147, 147);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

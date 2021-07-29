@@ -2,6 +2,7 @@
 
 <div class="main">
     <h2>Vrijwilligerswerk</h2>
+    <hr>
     <ul>            
         <?php foreach($vars['volunteerjobs'] as $volunteerjob): ?>
             <li>

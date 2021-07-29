@@ -1,1 +1,4 @@
-<footer>Footer</footer>
+    </div>
+</div>
+
+<footer>Gemaakt door Jelle Slofstra</footer>

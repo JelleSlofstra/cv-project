@@ -4,16 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Libraries\View;
 
+use App\Models\UserModel;
+
 class HomeController {
 
     public function index()
     {
-        return View::render('home.view', [
-            'name' => 'My Name',
-            'nog_een_array' => [
-                'apple',
-                'banana',
-            ]
-        ]);
+        $userinfo = UserModel::get(1);
+        return View::render('home.view', ['user' => $userinfo]        
+        );
     }
 }
