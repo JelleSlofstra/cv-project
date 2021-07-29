@@ -1,11 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    background-color: rgb(96, 59, 89);
+    font-family: FreeMono, monospace;
 }
 
 .main {
     min-height: 600px;
+    font-size: larger;
 }
 
 h2 {
