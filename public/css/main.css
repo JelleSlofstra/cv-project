@@ -6,11 +6,11 @@ body {
 }
 
 .main {
-    min-height: 600px;
+    min-height: 1000px;
     font-size: larger;
 }
 
-h2 {
+h2,h3 {
     text-align: center;
 }
 

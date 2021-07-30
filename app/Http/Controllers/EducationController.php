@@ -28,6 +28,19 @@ class EducationController extends Controller
     public function create()
     {
         
+        if(!$_POST['end_year']){
+            $_POST['end_year'] = NULL;
+        }
+        EducationModel::store([
+            'id' => NULL,
+            'user_id' => '1',
+            'start_year' => $_POST['start_year'],
+            'end_year' => $_POST['end_year'],
+            'name' => $_POST['name'],
+            'info' => $_POST['info'],
+            'deleted' => NULL
+        ]);
+        header('Location: /educations');
     }
 
     public function show()

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HobbyController;
 use App\Middleware\CheckLogin;
 
 $middleware = new CheckLogin;
@@ -17,3 +18,6 @@ $router->get('hobbies', 'App/Http/Controllers/HobbyController.php@index');
 
 $router->get('login', 'App/Http/Controllers/LoginController.php');
 $router->get('logout', 'App/Http/Controllers/LoginController.php@logout');
+
+$router->post('hobbies/add', 'App/Http/Controllers/HobbyController.php@create');
+$router->post('educations/add', 'App/Http/Controllers/EducationController.php@create');

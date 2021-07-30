@@ -10,6 +10,14 @@
             </li>            
         <?php endforeach; ?>
     </ul>    
+
+    <h3>Voeg een hobby toe</h3>
+    <hr>
+    <form method="POST" action="hobbies/add">
+        <input name="hobby"></input>
+        <button type="submit">Voeg toe</button>
+    </form>
+
 </div>
 
 <?php require 'views/partials/footer.view.php' ?>

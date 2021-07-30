@@ -22,7 +22,37 @@
                 </div>
             </li>            
         <?php endforeach; ?>
-    </ul>    
+    </ul>   
+    
+    <h3>Voeg een opleiding toe</h3>
+    <hr>
+    <form method="POST" action="educations/add">
+        <div>
+            <label for="name">Naam</label>
+        </div>
+        <div>                 
+            <input name="name" id="name" placeholder="Naam van de opleiding"></input>
+        </div>
+        <div>
+            <label for="info">Opleidingsinfo</label> 
+        </div>
+        <div>
+            <input name="info" placeholder="Opleidingsinfo"></input>
+        </div>
+        <div>
+            <label for="start_year">Beginjaar</label>
+        </div>
+        <div>
+            <input type="number" id="start_year" name="start_year"></input>
+        </div>                    
+        <div>
+            <label for="end_year">Eindjaar</label>
+        </div>
+        <div>
+            <input type="number" id="end_year" name="end_year"></input>
+        </div>     
+        <button type="submit">Voeg toe</button>
+    </form>
 </div>
 
 <?php require 'views/partials/footer.view.php' ?>
