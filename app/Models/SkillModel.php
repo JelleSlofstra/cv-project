@@ -23,7 +23,7 @@ class SkillModel extends Model
     ];
 
     /**
-     * Get jobs from certrain user
+     * Get skills from certain user
      * @param $user_id (int) the ID of the user
      * @return object user data
      */

@@ -23,7 +23,7 @@ class HobbyModel extends Model
     ];
 
     /**
-     * Get hobbies from certrain user
+     * Get hobbies from certain user
      * @param $user_id (int) the ID of the user
      * @return object user data
      */

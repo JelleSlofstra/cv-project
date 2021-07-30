@@ -25,7 +25,7 @@ class VolunteerJobModel extends Model
 
 
     /**
-     * Get jobs from certain user
+     * Get volunteerjobs from certain user
      * @param $user_id (int) the ID of the user
      * @return object user data
      */

@@ -17,20 +17,14 @@ class EducationController extends Controller
         ]);
     }
 
-    /**
-     * Store a user record into the database
-     */
-    public function store()
-    {
-        
-    }
-
     public function create()
     {
-        
+        //end year can be empty
         if(!$_POST['end_year']){
             $_POST['end_year'] = NULL;
         }
+
+        //call the store method with the entered values as parameters
         EducationModel::store([
             'id' => NULL,
             'user_id' => '1',
@@ -40,29 +34,8 @@ class EducationController extends Controller
             'info' => $_POST['info'],
             'deleted' => NULL
         ]);
+
+        //redirect to educations with the new entry being added
         header('Location: /educations');
     }
-
-    public function show()
-    {
-
-    }
-
-    /**
-     * Updates a user record into the database
-     */
-    public function update()
-    {
-       
-    }
-
-    /**
-     * Archive a user record into the database
-     */
-    public function destroy(int $id)
-    {
-
-    }
-
 }
-

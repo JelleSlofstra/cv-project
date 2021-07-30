@@ -27,34 +27,15 @@ class HobbyController extends Controller
 
     public function create()
     {        
+        //call the store method with the entered values as parameters
         HobbyModel::store([
             'id' => NULL,
             'user_id' => '1',
             'name' => $_POST['hobby'],
             'deleted' => NULL
         ]);
+
+        //redirect to educations with the new entry being added
         header('Location: /hobbies');
     }
-
-    public function show()
-    {
-
-    }
-
-    /**
-     * Updates a user record into the database
-     */
-    public function update()
-    {
-       
-    }
-
-    /**
-     * Archive a user record into the database
-     */
-    public function destroy(int $id)
-    {
-
-    }
-
 }

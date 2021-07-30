@@ -25,7 +25,7 @@ class EducationModel extends Model
 
 
     /**
-     * Get jobs from certrain user
+     * Get educations from certain user
      * @param $user_id (int) the ID of the user
      * @return object user data
      */

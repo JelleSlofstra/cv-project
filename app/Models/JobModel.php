@@ -23,7 +23,7 @@ class JobModel extends Model
     ];
 
     /**
-     * Get jobs from certrain user
+     * Get jobs from certain user
      * @param $user_id (int) the ID of the user
      * @return object user data
      */
